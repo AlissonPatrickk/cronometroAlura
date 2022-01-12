@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import style from'./lista.module.scss'
 import Item from './Item'
 import { ITarefa } from "../../types/tarefa";
@@ -11,8 +10,7 @@ function Lista ({tarefas}: {tarefas: ITarefa[]}) {
                {tarefas.map((item,index) => (
                    <Item 
                    key={index}
-                   tarefa={item.tarefa}
-                   tempo={item.tempo}
+                   {...item}
                    />
                ))}
             </ul>

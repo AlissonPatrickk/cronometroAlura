@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { ITarefa } from '../types/tarefa';
 
 function App() {
-  const [tarefas, setTarefas] = useState<ITarefa[] | [] >([]);
+  const [tarefas, setTarefas] = useState<ITarefa[] | []>([]);
 
   return (
     <div className={style.AppStyle}>
